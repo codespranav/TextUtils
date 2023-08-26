@@ -18,7 +18,7 @@ function TextForm(props) {
         setText(event.target.value)
     }
 
-    const timeTaken = text.split(" ").length/200;
+    const timeTaken = Math.round( text.split(" ").length/200 );
 
     return (
         <>
